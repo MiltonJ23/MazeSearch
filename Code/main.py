@@ -1,5 +1,5 @@
 import pygame, sys 
-from pygame.locals import * 
+from pygame.locals import *  # type: ignore
 
 
 pygame.init()
@@ -17,3 +17,12 @@ while True:
             sys.exit()
     pygame.display.update()
     fpsClock.tick(30)
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
