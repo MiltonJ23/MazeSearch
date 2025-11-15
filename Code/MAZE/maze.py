@@ -76,7 +76,6 @@ class Maze:
                     self.edges_list.append( ((i,j), (i, j+1)) )  # Edge in the right position registered
                 if i + 1 < self.grid_rows:
                     self.edges_list.append( ((i,j), (i+1, j)) )  # Edge in the downward postion registered | only performed the right and down sides. to avoid duplicates .
-        print("Edges List:", self.edges_list) 
         return self.edges_list
 
 
