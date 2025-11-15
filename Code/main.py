@@ -1,28 +1,16 @@
 import pygame, sys 
 from pygame.locals import *  # type: ignore
-
-
-pygame.init()
-fpsClock = pygame.time.Clock()
-surface = pygame.display.set_mode((799,599)) # Let's dfine the size of the window 
-
-background = pygame.color.Color(43,233,23) # defining a color for the background 
-
-while True:
-    surface.fill(background)
-
-    for event in pygame.event.get():
-        if event.type == QUIT:
-            pygame.quit()
-            sys.exit()
-    pygame.display.update()
-    fpsClock.tick(30)
-
-
-
+from Game.game import Game
 
 
 
 
 if __name__ == "__main__":
-    main()
+    # Taille du labyrinthe en cellules "logiques"
+    GRID_ROWS = 10
+    GRID_COLS = 14
+    CELL_SIZE = 22
+
+    game = Game(GRID_ROWS, GRID_COLS, CELL_SIZE)
+    game.new_game()
+    game.run()
