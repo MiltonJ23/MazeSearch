@@ -1,6 +1,4 @@
-This is the content for your `README.md` file.
 
-````markdown
 # 🔱 AI Maze Generator and Runner: Kruskal's Algorithm Implementation
 
 ## Project Overview
@@ -115,5 +113,4 @@ The `Game/game.py` module manages the Pygame loop, handling:
 
 <!-- end list -->
 
-```
-```
+
