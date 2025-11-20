@@ -44,8 +44,8 @@ cd MazeSearch/Code
 Create a virtual environment (e.g., named `AIvenv`) and activate it.
 
 ```bash
-# Create the virtual environment
-python3 -m venv AIvenv
+# navigate to the virtual environment 
+cd .. 
 
 # Activate the virtual environment
 # For macOS/Linux:
@@ -112,5 +112,6 @@ The `Game/game.py` module manages the Pygame loop, handling:
   * Managing the game state and timer logic.
 
 <!-- end list -->
+
 
 
